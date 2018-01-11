@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: #26211d;
+    text-align: justify;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Krona One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0;
+    color: #d6b014;
+}
+
+@media screen and (max-width: 620px) {
+    .title h1 {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 621px) and (max-width: 768px) {
+    .title h1 {
+        font-size: 26px;
+    }
+}
+
+.fb {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    cursor: pointer;
+    outline: 0;
+    background-image: url(../img/fb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+.scrollup {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 40px;
+    text-decoration: none;
+    z-index: 999;
+    background-color: rgba(214,176,20,0.5);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.scrollup:hover {
+    background-color: rgba(214,176,20,0.9);
+}
+
+section {
+    padding: 30px 0;
+}
+
+/*Nagłówek*/
+.header {
+    width: 100%;
+    min-height: 170px;
+    background-color: #26211d;
+}
+
+.header .navigation {
+    background-color: #d6b014;
+    min-height: 40px;
+}
+
+.logo {
+    background-image: url(../img/DzieciecyUsmiech-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+    height: 110px;
+    margin: 15px auto;
+}
+
+.call, .bank {
+    color: #fff;
+    text-align: center;
+}
+
+.call {
+    margin-top: 45px;
+}
+
+.bank {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .call, .bank {
+        display: none;
+    }
+}
+
+.call span, .bank span {
+    color: #d6b014;
+    font-weight: 700;
+}
+
+nav .menu {
+    list-style-type: none;
+    font-family: 'Krona One', sans-serif;
+    font-size: 12px;
+}
+
+nav .menu li {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav .menu li a {
+    color: #26211d !important;
+}
+
+nav .menu li a:hover {
+    color: #fff !important;
+}
+
+nav .menu li .act {
+    color: #fff !important;
+}
+
+button {
+    margin: 0 auto;
+    color: white;
+}
+
+/*Zdjęcie główne*/
+.main {
+    width: 100%;
+    height: 450px;
+    background: url(../img/dzieci.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.main p {
+    padding: 150px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #d6b014;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.main p span {
+    font-size: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        display: none;
+    }
+}
+
+/*Sekcje*/
+.sekcje {
+    padding: 30px 0;
+    width: 100%;
+    min-height: 450px;
+    background-color: #fff;
+}
+
+.sekcja {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.nazwa {
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: 'Krona One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.procent {
+    width: 100%;
+    height: 280px;
+    background: url(../img/1procent.jpg) no-repeat center center;
+}
+
+.swietlica {
+    width: 100%;
+    height: 280px;
+    background: url(../img/swietlica.jpg) no-repeat center center;
+    /*<a href="https://pl.freepik.com/darmowe-zdjecie/szczęśliwy-nauczyciel-słuchać-jej-uczniow_863620.htm">Zaprojektowane przez Freepik</a>*/
+}
+
+.podopieczni {
+    width: 100%;
+    height: 280px;
+    background: url(../img/podopieczni.jpg) no-repeat center center;
+    /*<a href="https://pl.freepik.com/darmowe-zdjecie/dziewczyna-trzyma-się-za-ręce-uśmiechnięte_1267707.htm">Zaprojektowane przez Freepik</a>*/
+}
+
+.klik {
+    background-color: #26211d;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    bottom: 0;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.klik:hover {
+    color: #d6b014;
+}
+
+.procent:hover, .swietlica:hover, .podopieczni:hover {
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+/*o nas*/
+.przedsiewziecia {
+    list-style-type: none;
+    text-indent: 50px;
+}
+
+/*organa*/
+table {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+table tr, table th {
+    text-align: center;
+}
+
+table th {
+    font-size: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+table td {
+    padding: 0 8px;
+    color: grey;
+}
+
+#podopieczni p {
+    margin: 150px 0;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/*świetlica*/
+#swietlica li {
+    list-style-type: none;
+    text-indent: 50px;
+}
+
+/*galeria*/
+.title2 {
+    text-transform: uppercase;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 700;
+    color: #26211d;
+    background-color: rgba(255,255,255,.6);
+    text-shadow: 2px 2px 5px #fff;
+    position: relative;
+    top: 200px;
+}
+
+.title2 h2 {
+    font-size: 26px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.img1 {
+    background: url(../img/galeria/swietlica/zajecia-plastyczne.jpg) no-repeat center center;
+}
+
+.img2 {
+    background: url(../img/galeria/wakacje/wakacje2016-grupa.jpg) no-repeat bottom center;
+}
+
+.img3 {
+    background: url(../img/galeria/ferie/ferie2016-lyzwy.jpg) no-repeat center center;
+}
+
+.img4 {
+    background: url(../img/galeria/bale/bal-charytatywny-2013-sala-balowa.jpg) no-repeat center center;
+}
+
+.img5 {
+    background: url(../img/galeria/koncerty/koncert-charytatywny-2010-Katarzyna-Dabrowska.jpg) no-repeat center center;
+}
+
+.img6 {
+    background: url(../img/galeria/uroczystosci/wigilia-2017-jaselka.jpg) no-repeat center left;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+    -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+}
+
+.img-responsive {
+    padding-bottom: 20px;
+}
+
+.modal-dialog {
+    max-width: 580px;
+}
+
+.modal-body{
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+@media screen and (max-width: 620px) {
+    .modal-dialog img {
+        width: 100%;
+    }
+    .modal {
+        margin-top: 50px;
+    }
+}
+
+button.close, #show-previous-image, #show-next-image {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    opacity: 1;
+    color: #d6b014;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 900;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+}
+
+button.close {
+    position: absolute;
+    z-index: 3;
+    right: -25px;
+    top: -15px;
+}
+
+#show-previous-image {
+    position: absolute;
+    z-index: 3;
+    left: -48px;
+    top: -300px;
+}
+
+#show-next-image {
+    position: absolute;
+    z-index: 3;
+    right: -530px;
+    top: -300px;
+}
+
+button.close:hover, #show-previous-image:hover, #show-next-image:hover{
+    font-size: 30px;
+    color: #d6b014;
+    background-color: #fff;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#image-gallery-caption {
+	margin: 15px 0 30px 0;
+	color: #26211d;
+	font-size: 16px;
+    font-family: 'Krona One', sans-serif;
+	line-height: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.thumbnail img {
+	height: 100%;
+	width: 100%;
+    margin: 10px;
+}
+
+.btn-block {
+    cursor: pointer;
+    border-radius: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #d6b014;
+    font-weight: 700;
+}
+
+.btn-block:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*1procent*/
+.center {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#procent span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*kontakt */
+#kontakt {
+    padding-bottom: 0;
+}
+
+.type-data {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.data {
+    text-align: center;
+    margin-bottom: 25px;
+    color: grey;
+    font-size: 18px;
+}
+
+.data a {
+    color: inherit;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/*Stopka*/
+footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 25px 0;
+    font-size: 13px;
+    background-color: #26211d;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+}
