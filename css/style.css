@@ -186,6 +186,7 @@ button {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    margin-bottom: 50px;
 }
 
 .nazwa {
@@ -438,11 +439,11 @@ table td {
 }
 
 .img2 {
-    background: url(../img/galeria/wakacje/wakacje2016-grupa.jpg) no-repeat bottom center;
+    background: url(../img/galeria/wakacje/wakacje2016-grupa.JPG) no-repeat bottom center;
 }
 
 .img3 {
-    background: url(../img/galeria/ferie/ferie2016-lyzwy.jpg) no-repeat center center;
+    background: url(../img/galeria/ferie/ferie2016-lyzwy.JPG) no-repeat center center;
 }
 
 .img4 {
