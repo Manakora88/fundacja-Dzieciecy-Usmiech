@@ -7,6 +7,13 @@
         <meta name='author' content='MW'>
         <meta name="keywords" content='fundacja Skierniewice, fundacja Skierniewice jagiellońska, skierniewice fundacja dzieciecy usmiech, skierniewice fundacja dziecięcy uśmiech, skierniewice 1%, prezes Krzesiak'>
         <title>1% podatku dla Fundacji "Dziecięcy Uśmiech" w Skierniewicach</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
         <!-- Bootstrap CSS -->
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css' integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M' crossorigin='anonymous'>
         <!-- CSS -->
@@ -97,7 +104,7 @@
                                     <p>Nasz nr KRS: <span>0000 072 690</span>.</p>
                                 </div>
                                 <p>
-                                    Fundacja będzie również wdzięczna za każde inne wsparcie finansowe, którego dokonywać można na nasze konto bankowe:
+                                    Fundacja będzie również wdzięczna za każde inne wsparcie finansowe, które można przekazać na nasze konto bankowe:
                                 </p>
                                 <div class="center">
                                     <span>98 1240 3321 1111 0000 2854 3121</span></br>
@@ -131,7 +138,7 @@
             </button>
         </a>
 
-        <a href="./procent.html">
+        <a href="#">
             <button class="scrollup" title="Do góry">
                 GÓRA
             </button>
@@ -157,6 +164,12 @@
                                 document.querySelector(".scrollup").style.display = "none";
                             }
                         }
+
+                        $.scrollTo(0);
+
+                        $(".scrollup").on("click", function() {
+                            $.scrollTo($("body"),500);
+                        });
 
             });
         </script>
