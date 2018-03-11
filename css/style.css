@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -276,7 +277,7 @@ blockquote {
     position: relative;
 }
 
-/*organa*/
+/*struktura*/
 table {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -295,6 +296,7 @@ table th {
 table td {
     padding: 0 8px;
     color: #123c69;
+    font-size: 15px;
 }
 
 /*podopieczni*/
@@ -338,24 +340,24 @@ table td {
     }
 }
 
-#wiktoria-caban, #piotr-krupa, #dominika-osadowska, #sandra-skreta {
+#wiktoria-caban, #kacper-kazanowski, #piotr-krupa, #karolina-niedzwiadek, #dominika-osadowska, #kacper-samul, #sandra-skreta {
     margin: 0 10%;
     margin-bottom: 60px;
 }
 
 @media screen and (max-width: 400px) {
-    #wiktoria-caban .title3 h2, #piotr-krupa .title3 h2, #dominika-osadowska .title3 h2, #sandra-skreta .title3 h2 {
+    #wiktoria-caban .title3 h2, #kacper-kazanowski .title3 h2, #piotr-krupa .title3 h2, #karolina-niedzwiadek .title3 h2, #dominika-osadowska .title3 h2, #kacper-samul .title3 h2, #sandra-skreta .title3 h2 {
         font-size: 22px;
     }
     #podopieczni .osoba p {
         font-size: 15px;
     }
-    #wiktoria-caban, #piotr-krupa, #dominika-osadowska, #sandra-skreta {
+    #wiktoria-caban, #kacper-kazanowski, #piotr-krupa, #karolina-niedzwiadek, #dominika-osadowska, #kacper-samul, #sandra-skreta {
         margin: 0 0 40px 0;
     }
 }
 
-.im1, .im2, .im3, .im4 {
+.im1, .im2, .im3, .im4, .im5, .im6, .im7 {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -370,14 +372,26 @@ table td {
 }
 
 .im2 {
-    background: url(../img/dzieci/Piotr-Krupa.jpg) no-repeat center center;
+    background: url(../img/dzieci/Kacper-Kazanowski.jpg) no-repeat center center;
 }
 
 .im3 {
-    background: url(../img/dzieci/Dominika-Osadowska.JPG) no-repeat center center;
+    background: url(../img/dzieci/Piotr-Krupa.jpg) no-repeat center center;
 }
 
 .im4 {
+    background: url(../img/dzieci/Karolina-Niedzwiadek.jpg) no-repeat center center;
+}
+
+.im5 {
+    background: url(../img/dzieci/Dominika-Osadowska.JPG) no-repeat center center;
+}
+
+.im6 {
+    background: url(../img/dzieci/Kacper-Samul.jpg) no-repeat center center;
+}
+
+.im7 {
     background: url(../img/dzieci/Sandra-Skreta.jpg) no-repeat center center;
 }
 
