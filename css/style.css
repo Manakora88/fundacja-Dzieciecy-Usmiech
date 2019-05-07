@@ -156,16 +156,29 @@ button {
     -o-background-size: cover;
 }
 
-.main p {
-    padding: 150px 0;
-    font-size: 30px;
-    font-weight: 700;
-    color: #f1cb25;
-    text-shadow: 2px 2px 5px #000;
+.main img {
+    width: 286px;
+    height: 120px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-box-shadow: 2px 2px 5px #433F3F;
+    -webkit-box-shadow: 2px 2px 5px #433F3F;
+    box-shadow: 2px 2px 5px #433F3F;
+    margin-bottom: 145px;
 }
 
-.main p span {
-    font-size: 48px;
+.main .source {
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: rgba(255,255,255,.55);
+    margin-bottom: 0;
+}
+
+.main .source a {
+  color: red;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
