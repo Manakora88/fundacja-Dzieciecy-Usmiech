@@ -1,655 +1,706 @@
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*{
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 
 body {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    color: #26211d;
-    text-align: justify;
+   font-size: 16px;
+   font-family: "Lato", sans-serif;
+   color: #26211d;
+   text-align: justify;
 }
 
 a:hover {
-    text-decoration: none;
+   text-decoration: none;
 }
 
 .title {
-    font-family: 'Krona One', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 30px 0;
-    color: #f1cb25;
+   font-family: 'Krona One', sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   margin: 30px 0;
+   color: #f1cb25;
 }
 
 @media screen and (max-width: 620px) {
-    .title h1 {
-        font-size: 22px;
-    }
+   .title h1 {
+       font-size: 22px;
+   }
 }
 @media screen and (min-width: 621px) and (max-width: 768px) {
-    .title h1 {
-        font-size: 26px;
-    }
+   .title h1 {
+       font-size: 26px;
+   }
 }
 
 .fb {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9999;
-    cursor: pointer;
-    outline: 0;
-    background-image: url(../img/fb.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
+   width: 40px;
+   height: 40px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 9999;
+   cursor: pointer;
+   outline: 0;
+   background-image: url(../img/fb.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 40px 40px;
 }
 
 .scrollup {
-    position: fixed;
-    display: none;
-    bottom: 0;
-    right: 0;
-    width: 70px;
-    height: 40px;
-    text-decoration: none;
-    z-index: 999;
-    background-color: rgba(214,176,20,0.5);
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
+   position: fixed;
+   display: none;
+   bottom: 0;
+   right: 0;
+   width: 70px;
+   height: 40px;
+   text-decoration: none;
+   z-index: 999;
+   background-color: rgba(214,176,20,0.5);
+   color: #fff;
+   font-weight: 700;
+   font-size: 14px;
+   cursor: pointer;
 }
 
 .scrollup:hover {
-    background-color: rgba(214,176,20,0.9);
+   background-color: rgba(214,176,20,0.9);
 }
 
 section {
-    padding: 30px 0;
+   padding: 30px 0;
 }
 
 /*Nagłówek*/
 .header {
-    width: 100%;
-    min-height: 170px;
-    background-color: #123c69;
+   width: 100%;
+   min-height: 170px;
+   background-color: #123c69;
 }
 
 .header .navigation {
-    background-color: #f1cb25;
-    min-height: 40px;
+   background-color: #f1cb25;
+   min-height: 40px;
 }
 
 .logo {
-    background-image: url(../img/DzieciecyUsmiech-logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
-    height: 110px;
-    margin: 15px auto;
+   background-image: url(../img/DzieciecyUsmiech-logo.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   -webkit-background-size: contain;
+   -moz-background-size: contain;
+   background-size: contain;
+   -o-background-size: contain;
+   height: 110px;
+   margin: 15px auto;
 }
 
 .call, .bank {
-    color: #fff;
-    text-align: center;
-    margin-top: 40px;
+   color: #fff;
+   text-align: center;
+   margin-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
-    .call, .bank {
-        display: none;
-    }
+   .call, .bank {
+       display: none;
+   }
 }
 
 .call span, .bank span {
-    color: #f1cb25;
-    font-weight: 700;
+   color: #f1cb25;
+   font-weight: 700;
 }
 
 nav .menu {
-    list-style-type: none;
-    font-family: 'Krona One', sans-serif;
-    font-size: 12px;
+   list-style-type: none;
+   font-family: 'Krona One', sans-serif;
+   font-size: 12px;
 }
 
 nav .menu li {
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    list-style-type: none;
+   text-transform: uppercase;
+   text-align: center;
+   width: 100%;
+   list-style-type: none;
 }
 
 nav .menu li a {
-    color: #26211d !important;
+   color: #26211d !important;
 }
 
 nav .menu li a:hover {
-    color: #fff !important;
+   color: #fff !important;
 }
 
 nav .menu li .act {
-    color: #fff !important;
+   color: #fff !important;
 }
 
 button {
-    margin: 0 auto;
-    color: white;
+   margin: 0 auto;
+   color: white;
 }
 
 /*Zdjęcie główne*/
 .main {
-    width: 100%;
-    height: 450px;
-    background: url(../img/dzieci.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+   width: 100%;
+   height: 450px;
+   padding-top: 165px;
+   background: url(../img/dzieci.jpg) no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
 }
 
 .main img {
-    width: 286px;
-    height: 120px;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-box-shadow: 2px 2px 5px #433F3F;
-    -webkit-box-shadow: 2px 2px 5px #433F3F;
-    box-shadow: 2px 2px 5px #433F3F;
-    margin-bottom: 145px;
+   width: 286px;
+   height: 120px;
+   border-radius: 15px;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-box-shadow: 2px 2px 5px #433F3F;
+   -webkit-box-shadow: 2px 2px 5px #433F3F;
+   box-shadow: 2px 2px 5px #433F3F;
+   margin-bottom: 145px;
 }
 
 .main .source {
-    text-align: center;
-    font-size: 12px;
-    line-height: 20px;
-    background-color: rgba(255,255,255,.55);
-    margin-bottom: 0;
+   text-align: center;
+   font-size: 12px;
+   line-height: 20px;
+   background-color: rgba(255,255,255,.55);
+   margin-bottom: 0;
 }
 
 .main .source a {
-  color: red;
-  font-weight: 700;
+ color: red;
+ font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
-    .main {
-        display: none;
-    }
+   .main {
+       display: none;
+   }
 }
 
 /*Sekcje*/
 .sekcje {
-    padding: 30px 0;
-    width: 100%;
-    min-height: 450px;
-    background-color: #fff;
+   padding: 30px 0;
+   width: 100%;
+   min-height: 450px;
+   background-color: #fff;
 }
 
 .sekcja {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin-bottom: 50px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   margin-bottom: 50px;
 }
 
 .nazwa {
-    font-size: 20px;
-    font-weight: 400px;
-    font-family: 'Krona One', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px 0;
+   font-size: 20px;
+   font-weight: 400px;
+   font-family: 'Krona One', sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 10px 0;
 }
 
 .procent {
-    width: 100%;
-    height: 280px;
-    background: url(../img/1procent.jpg) no-repeat center center;
+   width: 100%;
+   height: 280px;
+   background: url(../img/1procent.jpg) no-repeat center center;
 }
 
 .swietlica {
-    width: 100%;
-    height: 280px;
-    background: url(../img/swietlica.jpg) no-repeat center center;
-    /*<a href="https://pl.freepik.com/darmowe-zdjecie/szczęśliwy-nauczyciel-słuchać-jej-uczniow_863620.htm">Zaprojektowane przez Freepik</a>*/
+   width: 100%;
+   height: 280px;
+   background: url(../img/swietlica.jpg) no-repeat center center;
+   /*<a href="https://pl.freepik.com/darmowe-zdjecie/szczęśliwy-nauczyciel-słuchać-jej-uczniow_863620.htm">Zaprojektowane przez Freepik</a>*/
 }
 
 .podopieczni {
-    width: 100%;
-    height: 280px;
-    background: url(../img/podopieczni.jpg) no-repeat center center;
-    /*<a href="https://pl.freepik.com/darmowe-zdjecie/dziewczyna-trzyma-się-za-ręce-uśmiechnięte_1267707.htm">Zaprojektowane przez Freepik</a>*/
+   width: 100%;
+   height: 280px;
+   background: url(../img/podopieczni.jpg) no-repeat center center;
+   /*<a href="https://pl.freepik.com/darmowe-zdjecie/dziewczyna-trzyma-się-za-ręce-uśmiechnięte_1267707.htm">Zaprojektowane przez Freepik</a>*/
 }
 
 .klik, .gal {
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   text-transform: uppercase;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 700;
+   color: #fff;
 }
 
 .klik {
-    width: 50%;
-    background-color: #123c69;
-    position: relative;
-    bottom: 0;
-    margin: 0 auto;
+   width: 50%;
+   background-color: #123c69;
+   position: relative;
+   bottom: 0;
+   margin: 0 auto;
 }
 
 .gal {
-    width: 200px;
-    background-color: #123c69;
+   width: 200px;
+   background-color: #123c69;
 }
 
 @media screen and (max-width: 600px) {
-    .gal {
-        width: 35%;
-    }
+   .gal {
+       width: 35%;
+   }
 }
 
 .klik:hover {
-    color: #f1cb25;
+   color: #f1cb25;
 }
 
 .gal:hover {
-    color: #f1cb25;
+   color: #f1cb25;
 }
 .procent:hover, .swietlica:hover, .podopieczni:hover {
-    -o-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -webkit-transition: all 0.6s;
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
+   -o-transition: all 0.6s;
+   -moz-transition: all 0.6s;
+   -webkit-transition: all 0.6s;
+   -moz-transform: scale(1.05);
+   -o-transform: scale(1.05);
+   -webkit-transform: scale(1.05);
 }
 
 /*o nas*/
 .przedsiewziecia {
-    list-style-type: none;
-    text-indent: 50px;
+   list-style-type: none;
+   text-indent: 50px;
 }
 
 blockquote {
-    border-left: 5px solid #ddd;
-    padding-left: 25px;
-    position: relative;
+   border-left: 5px solid #ddd;
+   padding-left: 25px;
+   position: relative;
 }
 
 /*struktura*/
 table {
-    margin: 0 auto;
-    margin-bottom: 30px;
+   margin: 0 auto;
+   margin-bottom: 30px;
 }
 
 table tr, table th {
-    text-align: center;
+   text-align: center;
 }
 
 table th {
-    font-size: 20px;
-    padding: 10px 0;
-    text-transform: uppercase;
+   font-size: 20px;
+   padding: 10px 0;
+   text-transform: uppercase;
 }
 
 table td {
-    padding: 0 8px;
-    color: #123c69;
-    font-size: 15px;
+   padding: 0 8px;
+   color: #123c69;
+   font-size: 15px;
 }
 
 /*podopieczni*/
 .title4 {
-        text-transform: uppercase;
-        font-family: 'Krona One', sans-serif;
-        font-weight: 700;
-        color: #123c69;
-        background-color: rgba(255,255,255,.4);
-        text-shadow: 2px 2px 5px #fff;
-        position: relative;
-        top: 230px;
+       text-transform: uppercase;
+       font-family: 'Krona One', sans-serif;
+       font-weight: 700;
+       color: red;
+       background-color: rgba(255,255,255,.6);
+       text-shadow: 2px 2px 8px #bbb;
+       position: relative;
+       top: 230px;
 }
 
 .title4 h3 {
-    font-size: 20px;
+   font-size: 20px;
 }
 
 .title4:hover {
-    background-color: rgba(255,255,255,.6);
-    color: #f1cb25;
+   background-color: rgba(255,255,255,.8);
 }
 
-#podopieczni .komunikat p {
-    margin: 50px 0;
-    color: red;
-    font-weight: 700;
-    text-align: center;
-    font-size: 20px;
-    text-transform: uppercase;
+#podopieczni .osoba {
+   font-size: 18px;
 }
 
 #podopieczni .osoba p {
-    font-size: 18px;
-    padding-top: 10%;
+   padding-top: 10%;
+}
+
+#podopieczni .wsparcie {
+   padding-top: 10px;
 }
 
 @media screen and (max-width: 990px) {
-    #podopieczni .osoba p {
-        padding-top: 0;
-    }
+   #podopieczni .osoba p {
+       padding-top: 0;
+   }
 }
 
-#wiktoria-caban, #kacper-kazanowski, #piotr-krupa, #karolina-niedzwiadek, #dominika-osadowska, #kacper-samul, #sandra-skreta {
-    margin: 0 10%;
-    margin-bottom: 60px;
+#wiktoria-caban, #kacper-kazanowski, #piotr-krupa, #karolina-niedzwiadek, #dominika-osadowska, #wiktor-podrazka, #kacper-samul, #sandra-skreta {
+   margin: 0 10%;
+   margin-bottom: 60px;
 }
 
 @media screen and (max-width: 400px) {
-    #wiktoria-caban .title3 h2, #kacper-kazanowski .title3 h2, #piotr-krupa .title3 h2, #karolina-niedzwiadek .title3 h2, #dominika-osadowska .title3 h2, #kacper-samul .title3 h2, #sandra-skreta .title3 h2 {
-        font-size: 22px;
-    }
-    #podopieczni .osoba p {
-        font-size: 15px;
-    }
-    #wiktoria-caban, #kacper-kazanowski, #piotr-krupa, #karolina-niedzwiadek, #dominika-osadowska, #kacper-samul, #sandra-skreta {
-        margin: 0 0 40px 0;
-    }
+   #wiktoria-caban .title3 h2, #kacper-kazanowski .title3 h2, #piotr-krupa .title3 h2, #karolina-niedzwiadek .title3 h2, #dominika-osadowska .title3 h2, #wiktor-podrazka .title3 h2, #kacper-samul .title3 h2, #sandra-skreta .title3 h2 {
+       font-size: 22px;
+   }
+   #podopieczni .osoba p {
+       font-size: 15px;
+   }
+   #wiktoria-caban, #kacper-kazanowski, #piotr-krupa, #karolina-niedzwiadek, #dominika-osadowska, #wiktor-podrazka, #kacper-samul, #sandra-skreta {
+       margin: 0 0 40px 0;
+   }
 }
 
-.im1, .im2, .im3, .im4, .im5, .im6, .im7 {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin-bottom: 15px;
-    height: 300px;
-    width: 100%;
+.im1, .im2, .im3, .im4, .im5, .im6, .im7, .im8 {
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   margin-bottom: 15px;
+   height: 300px;
+   width: 100%;
 }
 
 .im1 {
-    background: url(../img/dzieci/Wiktoria-Caban.jpg) no-repeat center center;
+   background: url(../img/dzieci/Wiktoria-Caban.jpg) no-repeat center center;
 }
 
 .im2 {
-    background: url(../img/dzieci/Kacper-Kazanowski.jpg) no-repeat center center;
+   background: url(../img/dzieci/Kacper-Kazanowski.jpg) no-repeat center center;
 }
 
 .im3 {
-    background: url(../img/dzieci/Piotr-Krupa.jpg) no-repeat center center;
+   background: url(../img/dzieci/Piotr-Krupa.jpg) no-repeat center center;
 }
 
 .im4 {
-    background: url(../img/dzieci/Karolina-Niedzwiadek.jpg) no-repeat center center;
+   background: url(../img/dzieci/Karolina-Niedzwiadek.jpg) no-repeat center center;
 }
 
 .im5 {
-    background: url(../img/dzieci/Dominika-Osadowska.JPG) no-repeat center center;
+   background: url(../img/dzieci/Dominika-Osadowska.JPG) no-repeat center center;
 }
 
 .im6 {
-    background: url(../img/dzieci/Kacper-Samul.jpg) no-repeat center center;
+   background: url(../img/dzieci/Wiktor-Podrazka.jpg) no-repeat center center;
 }
 
 .im7 {
-    background: url(../img/dzieci/Sandra-Skreta.jpg) no-repeat center center;
+   background: url(../img/dzieci/Kacper-Samul.jpg) no-repeat center center;
+}
+
+.im8 {
+   background: url(../img/dzieci/Sandra-Skreta.jpg) no-repeat center center;
 }
 
 /*świetlica*/
 #swietlica li {
-    list-style-type: none;
-    text-indent: 50px;
+   list-style-type: none;
+   text-indent: 50px;
 }
 
 @media screen and (max-width: 600px) {
-    #swietlica li {
-        text-indent: 0;
-    }
+   #swietlica li {
+       text-indent: 0;
+   }
 }
 
 .second {
-    padding-left: 30px;
+   padding-left: 30px;
 }
 
 .center {
-    margin: 0 auto;
+   margin: 0 auto;
 }
 
 /*galeria*/
 .title2, .title3 {
-    text-transform: uppercase;
-    font-family: 'Krona One', sans-serif;
-    font-weight: 700;
-    color: #123c69;
+   text-transform: uppercase;
+   font-family: 'Krona One', sans-serif;
+   font-weight: 700;
+   color: #123c69;
 }
 
 .title2 {
-    background-color: rgba(255,255,255,.6);
-    text-shadow: 2px 2px 5px #fff;
-    position: relative;
-    top: 200px;
+   background-color: rgba(255,255,255,.6);
+   text-shadow: 2px 2px 5px #fff;
+   position: relative;
+   top: 200px;
 }
 
 .title3 {
-    margin-bottom: 30px;
-    text-align: center;
+   margin-bottom: 30px;
+   text-align: center;
+   padding-top: 40px;
 }
 
 .title2 h2, .title3 h2 {
-    font-size: 26px;
+   font-size: 26px;
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6 {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height: 300px;
-    margin-bottom: 15px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   height: 300px;
+   margin-bottom: 15px;
 }
 
 .img1 {
-    background: url(../img/galeria/swietlica/zajecia-plastyczne.jpg) no-repeat center center;
+   background: url(../img/galeria/swietlica/zajecia-plastyczne.jpg) no-repeat center center;
 }
 
 .img2 {
-    background: url(../img/galeria/wakacje/wakacje2016-grupa.JPG) no-repeat bottom center;
+   background: url(../img/galeria/wakacje/wakacje2016-grupa.JPG) no-repeat bottom center;
 }
 
 .img3 {
-    background: url(../img/galeria/ferie/ferie2016-lyzwy.JPG) no-repeat center center;
+   background: url(../img/galeria/ferie/ferie2016-lyzwy.JPG) no-repeat center center;
 }
 
 .img4 {
-    background: url(../img/galeria/bale/bal-charytatywny-2013-sala-balowa.jpg) no-repeat center center;
+   background: url(../img/galeria/bale/bal-charytatywny-2013-sala-balowa.jpg) no-repeat center center;
 }
 
 .img5 {
-    background: url(../img/galeria/koncerty/koncert-charytatywny-2010-Katarzyna-Dabrowska.jpg) no-repeat center center;
+   background: url(../img/galeria/koncerty/koncert-charytatywny-2010-Katarzyna-Dabrowska.jpg) no-repeat center center;
 }
 
 .img6 {
-    background: url(../img/galeria/uroczystosci/wigilia-2017-jaselka.jpg) no-repeat center left;
+   background: url(../img/galeria/uroczystosci/wigilia-2017-jaselka.jpg) no-repeat center left;
 }
 
 .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
-    -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
-	box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+   -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+   -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+      box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
 }
 
 .img-responsive {
-    padding-bottom: 20px;
+   padding-bottom: 20px;
 }
 
 .modal-dialog {
-    max-width: 580px;
+   max-width: 580px;
 }
 
 .modal-body{
-    margin: 0 auto;
-    display: block;
+   margin: 0 auto;
+   display: block;
 }
 
 .modal-footer {
-    border-top: none;
-    justify-content: center;
+   border-top: none;
+   justify-content: center;
 }
 
 @media screen and (max-width: 620px) {
-    .modal-dialog img {
-        width: 100%;
-    }
-    .modal {
-        margin-top: 50px;
-    }
+   .modal-dialog img {
+       width: 100%;
+   }
+   .modal {
+       margin-top: 50px;
+   }
 }
 
 button.close, #show-previous-image, #show-next-image {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    opacity: 1;
-    color: #123c69;
-    border-radius: 50%;
-    border: none;
-    font-size: 25px;
-    line-height: 40px;
-    font-weight: 900;
-    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
-	box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+   width: 40px;
+   height: 40px;
+   background-color: #fff;
+   opacity: 1;
+   color: #123c69;
+   border-radius: 50%;
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border: none;
+   font-size: 25px;
+   line-height: 40px;
+   font-weight: 900;
+   -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+   -moz-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+      box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
 }
 
 button.close {
-    position: absolute;
-    z-index: 3;
-    right: -25px;
-    top: -15px;
+   position: absolute;
+   z-index: 3;
+   right: -25px;
+   top: -15px;
 }
 
 #show-previous-image {
-    position: absolute;
-    z-index: 3;
-    left: -48px;
-    top: -300px;
+   position: absolute;
+   z-index: 3;
+   left: -48px;
+   top: -300px;
 }
 
 #show-next-image {
-    position: absolute;
-    z-index: 3;
-    right: -530px;
-    top: -300px;
+   position: absolute;
+   z-index: 3;
+   right: -530px;
+   top: -300px;
 }
 
 button.close:hover, #show-previous-image:hover, #show-next-image:hover{
-    font-size: 30px;
-    color: #f1cb25;
-    background-color: #fff;
-    opacity: 1;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   font-size: 30px;
+   color: #f1cb25;
+   background-color: #fff;
+   opacity: 1;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #image-gallery-caption {
-	margin: 15px 0 30px 0;
-	color: #123c69;
-	font-size: 16px;
-    font-family: 'Krona One', sans-serif;
-	line-height: 16px;
-    text-align: center;
-    font-weight: 400;
+   margin: 15px 0 30px 0;
+   color: #123c69;
+   font-size: 16px;
+   font-family: 'Krona One', sans-serif;
+   line-height: 16px;
+   text-align: center;
+   font-weight: 400;
 }
 
 .thumbnail img {
-	height: 100%;
-	width: 100%;
-    margin: 10px;
+   height: 100%;
+   width: 100%;
+   margin: 10px;
 }
 
 .btn-block {
-    cursor: pointer;
-    border-radius: 0;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f1cb25;
-    font-weight: 700;
+   cursor: pointer;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 10px;
+   margin: 10px 0;
+   background-color: #f1cb25;
+   font-weight: 700;
+   color: #123c69;
 }
 
 .btn-block:hover {
-    color: #123c69;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   color: #fff;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /*1procent*/
-.center {
-    margin: 20px 0;
-    text-align: center;
+.center2 {
+   margin: 20px 0;
+   text-align: center;
 }
 
 #procent span {
-    font-size: 20px;
-    font-weight: 700;
+   font-size: 30px;
+   font-weight: 700;
+   color: #123c69;
+}
+
+.number {
+ font-size: 20px;
+}
+
+.options {
+ margin-bottom: 80px;
+ padding: 10px 20px;
+}
+
+.options a {
+ text-transform: uppercase;
+ text-align: center;
+ color: #123c69;
+ text-decoration: underline;
+}
+
+.pit-logo {
+ width: 200px;
+ height: 80px;
+ margin: 0 auto;
+}
+
+.options p {
+ margin-top: 10px;
+}
+
+.pit-logo img {
+ border-radius: 10px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+}
+
+.pit-online, .pit-pobierz {
+ width: 150px;
+ height: 53px;
+ margin: 0 auto;
+}
+
+.pit-online {
+ margin-bottom: 10px;
 }
 
 /*kontakt */
 #kontakt {
-    padding-bottom: 0;
+   padding-bottom: 0;
 }
 
 .type-data {
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
+   margin-top: 10px;
+   font-size: 20px;
+   text-align: center;
+   font-weight: 700;
+   text-transform: uppercase;
 }
 
 .data {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #123c69;
-    font-size: 18px;
+   text-align: center;
+   margin-bottom: 25px;
+   color: #123c69;
+   font-size: 18px;
 }
 
 .data a {
-    color: inherit;
+   color: inherit;
 }
 
 .map {
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
+   width: 100%;
+   height: 500px;
+   margin-top: 20px;
 }
 
 /*Stopka*/
 footer {
-    width: 100%;
-    min-height: 30px;
-    padding: 25px 0;
-    font-size: 13px;
-    background-color: #123c69;
-    color: #fff;
+   width: 100%;
+   min-height: 30px;
+   padding: 25px 0;
+   font-size: 13px;
+   background-color: #123c69;
+   color: #fff;
 }
 
 footer p {
-    text-align: center;
+   text-align: center;
 }
