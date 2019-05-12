@@ -259,22 +259,6 @@ button {
    background: url(../img/podopieczni.jpg) no-repeat center center;
 }
 
-.gal {
-   height: 30px;
-   line-height: 30px;
-   text-align: center;
-   text-transform: uppercase;
-   cursor: pointer;
-   font-size: 14px;
-   font-weight: 700;
-   color: #fff;
-}
-
-.gal {
-   width: 200px;
-   background-color: #123c69;
-}
-
 @media screen and (max-width: 600px) {
    .gal {
        width: 35%;
@@ -291,16 +275,11 @@ button {
    text-indent: 50px;
 }
 
-blockquote {
-   border-left: 5px solid #ddd;
-   padding-left: 25px;
-   position: relative;
-}
-
 /*struktura*/
 table {
    margin: 0 auto;
    margin-bottom: 30px;
+   border-spacing: 5px 0;
 }
 
 table tr, table th {
@@ -418,26 +397,6 @@ table td {
 
 .im9 {
    background: url(../img/dzieci/Sandra-Skreta.jpg) no-repeat center center;
-}
-
-/*świetlica*/
-#swietlica li {
-   list-style-type: none;
-   text-indent: 50px;
-}
-
-@media screen and (max-width: 600px) {
-   #swietlica li {
-       text-indent: 0;
-   }
-}
-
-.second {
-   padding-left: 30px;
-}
-
-.center {
-   margin: 0 auto;
 }
 
 /*galeria*/
