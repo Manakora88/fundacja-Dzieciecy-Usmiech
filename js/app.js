@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //kontakt - google maps
-            var uluru = {lat: 51.958828, lng: 20.144958};
+            var uluru = {lat: 51.952717, lng: 20.145616};
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
@@ -14,7 +14,7 @@ $(document).ready(function() {
             });
 
             var infowindow = new google.maps.InfoWindow({
-                content: "<p>Fundacja 'Dziecięcy Uśmiech'</br>ul. Jagiellońska 30</p>"
+                content: "<p>Fundacja 'Dziecięcy Uśmiech'</br>Al. Niepodległości 4, pokój nr 8</p>"
             });
 
             marker.addListener("click", function() {

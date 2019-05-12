@@ -53,21 +53,22 @@ a:hover {
 .scrollup {
    position: fixed;
    display: none;
-   bottom: 0;
-   right: 0;
-   width: 70px;
+   bottom: 20px;
+   right: 20px;
+   width: 40px;
    height: 40px;
    text-decoration: none;
    z-index: 999;
-   background-color: rgba(214,176,20,0.5);
+   background-color: rgba(214,176,20,0.8);
    color: #fff;
    font-weight: 700;
    font-size: 14px;
    cursor: pointer;
+   border-radius: 50%;
 }
 
 .scrollup:hover {
-   background-color: rgba(214,176,20,0.9);
+   background-color: rgba(214,176,20,1);
 }
 
 section {
@@ -148,37 +149,63 @@ button {
 /*Zdjęcie główne*/
 .main {
    width: 100%;
-   height: 450px;
-   padding-top: 165px;
-   background: url(../img/dzieci.jpg) no-repeat center center;
+   height: 500px;
+   padding-top: 115px;
+   background-image: url(../img/dzieci.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    background-size: cover;
    -o-background-size: cover;
 }
 
-.main img {
-   width: 286px;
-   height: 120px;
-   border-radius: 15px;
-   -moz-border-radius: 15px;
-   -webkit-border-radius: 15px;
+.pitax {
+    font-family: 'Krona One', sans-serif;
+}
+
+.pitax p {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    -moz-text-shadow: 2px 2px 5px #433F3F;
+    -webkit-text-shadow: 2px 2px 5px #433F3F;
+    text-shadow: 2px 2px 5px #433F3F;
+}
+
+.pitax p:first-child {
+    font-size: 3rem;
+}
+
+.link-pitax {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.link-pitax img {
+   width: 180px;
+   height: 47px;
+   border-radius: 50px;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
    -moz-box-shadow: 2px 2px 5px #433F3F;
    -webkit-box-shadow: 2px 2px 5px #433F3F;
    box-shadow: 2px 2px 5px #433F3F;
-   margin-bottom: 145px;
+   margin-bottom: 190px;
 }
 
-.main .source {
+.source {
    text-align: center;
    font-size: 12px;
    line-height: 20px;
-   background-color: rgba(255,255,255,.55);
+   background-color: rgba(255,255,255,.5);
    margin-bottom: 0;
+   border-radius: 20px 20px 0 0;
 }
 
-.main .source a {
- color: red;
+.source a {
+ color: #123c69;
  font-weight: 700;
 }
 
@@ -207,6 +234,7 @@ button {
 .nazwa {
    font-size: 20px;
    font-weight: 400px;
+   color: #123c69;
    font-family: 'Krona One', sans-serif;
    text-transform: uppercase;
    text-align: center;
@@ -223,17 +251,15 @@ button {
    width: 100%;
    height: 280px;
    background: url(../img/swietlica.jpg) no-repeat center center;
-   /*<a href="https://pl.freepik.com/darmowe-zdjecie/szczęśliwy-nauczyciel-słuchać-jej-uczniow_863620.htm">Zaprojektowane przez Freepik</a>*/
 }
 
 .podopieczni {
    width: 100%;
    height: 280px;
    background: url(../img/podopieczni.jpg) no-repeat center center;
-   /*<a href="https://pl.freepik.com/darmowe-zdjecie/dziewczyna-trzyma-się-za-ręce-uśmiechnięte_1267707.htm">Zaprojektowane przez Freepik</a>*/
 }
 
-.klik, .gal {
+.gal {
    height: 30px;
    line-height: 30px;
    text-align: center;
@@ -242,14 +268,6 @@ button {
    font-size: 14px;
    font-weight: 700;
    color: #fff;
-}
-
-.klik {
-   width: 50%;
-   background-color: #123c69;
-   position: relative;
-   bottom: 0;
-   margin: 0 auto;
 }
 
 .gal {
@@ -263,20 +281,8 @@ button {
    }
 }
 
-.klik:hover {
-   color: #f1cb25;
-}
-
 .gal:hover {
    color: #f1cb25;
-}
-.procent:hover, .swietlica:hover, .podopieczni:hover {
-   -o-transition: all 0.6s;
-   -moz-transition: all 0.6s;
-   -webkit-transition: all 0.6s;
-   -moz-transform: scale(1.05);
-   -o-transform: scale(1.05);
-   -webkit-transform: scale(1.05);
 }
 
 /*o nas*/
@@ -318,7 +324,7 @@ table td {
        text-transform: uppercase;
        font-family: 'Krona One', sans-serif;
        font-weight: 700;
-       color: red;
+       color: #123c69;
        background-color: rgba(255,255,255,.6);
        text-shadow: 2px 2px 8px #bbb;
        position: relative;
@@ -495,7 +501,7 @@ table td {
 .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
    -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
    -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
-      box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.35);
 }
 
 .img-responsive {
@@ -540,7 +546,7 @@ button.close, #show-previous-image, #show-next-image {
    font-weight: 900;
    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
    -moz-box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
-      box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.35);
 }
 
 button.close {
@@ -592,7 +598,6 @@ button.close:hover, #show-previous-image:hover, #show-next-image:hover{
 
 .btn-block {
    cursor: pointer;
-   border-radius: 0;
    -moz-border-radius: 0;
    -webkit-border-radius: 0;
    text-align: center;
@@ -602,6 +607,7 @@ button.close:hover, #show-previous-image:hover, #show-next-image:hover{
    background-color: #f1cb25;
    font-weight: 700;
    color: #123c69;
+   border-radius: 20px;
 }
 
 .btn-block:hover {
